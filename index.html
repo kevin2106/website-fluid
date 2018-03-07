@@ -8,19 +8,24 @@
    <!--Import materialize.css-->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    <!--Import custom.css-->
-   <link rel="stylesheet" href="css/styles.css">
    <link rel="stylesheet" href="css/animate.css">
+   <link rel="stylesheet" href="css/jquery.fullPage.css">
+   <link rel="stylesheet" href="css/styles.css">
   <title>FluidDesign - Website</title>
 </head>
 
-<header id="main-area" data-stellar-background-ratio="0.5">
+<!-- Header Section -->
+<div id="fullpage">
+<header class="section page" id="main-area" data-stellar-background-ratio="0.5">
   <div class="container-fluid">
     <div class="contents">
       <a href="#" class="btn btn-common wow fadeInUp hvr-overline-from-center" data-wow-duration="1000ms" data-wow-delay="400ms">Info</a>
     </div>
   </div>
 </header>
-<section id="skills">
+
+<!-- Skills Section -->
+<section class="section page" id="skills">
   <div class="container-fluid">
     <div class="contents">
       <div class="section-header">
@@ -50,4 +55,64 @@
   </div>
 </section>
 
+
+<!-- Projects Section -->
+<section class="section page slide" id="projects">
+  <div class="container-fluid">
+    <div class="contents">
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <img src="../images/pr1.jpg"/>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <img src="../images/pr2.jpg"/>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <img src="../images/pr2.jpg"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <img src="../images/pr2.jpg"/>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <img src="../images/pr1.jpg"/>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <img src="../images/pr1.jpg"/>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <img src="../images/pr2.jpg"/>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <img src="../images/pr1.jpg"/>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <img src="../images/pr1.jpg"/>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <img src="../images/pr2.jpg"/>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <img src="../images/pr1.jpg"/>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <img src="../images/pr1.jpg"/>
+            </div>
+          </div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/vendors/scrolloverflow.min.js"></script>
+<script src="../js/vendors/jquery.slimscroll.js"></script>
+<script src="../js/jquery.fullPage.js"></script>
+<script src="../js/scripts.js"></script>
 </html>

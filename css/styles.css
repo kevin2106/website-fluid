@@ -23,7 +23,6 @@ body {
   font-weight: 400;
   color: white;
   text-transform: uppercase;
-
   display: inline-block;
 }
 
@@ -33,7 +32,6 @@ body {
   position: relative;
   color: #fff;
 }
-
 
 #main-area {
    background-image: url(../images/mainpage.png);
@@ -52,10 +50,13 @@ body {
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+
 }
 
 #skills .contents{
-  padding: 10% 0 0 5%;
+  padding: 10% 0 5% 5%;
 }
 
 #skills .section-header h1 {
@@ -78,4 +79,19 @@ body {
 
 #skills #skill {
   color: #00FFFF;
+}
+
+#projects {
+}
+
+#projects .contents {
+}
+
+#projects .row img {
+  width: 100%;
+  height: 50%;
+}
+
+#projects .col-sm-6 {
+  padding: 0 0 0 0;
 }
