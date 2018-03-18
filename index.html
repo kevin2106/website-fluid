@@ -1,5 +1,5 @@
-<html>
-<head
+<!DOCTYPE html>
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#000000">
@@ -8,9 +8,11 @@
    <!--Import materialize.css-->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    <!--Import custom.css-->
-   <link rel="stylesheet" href="css/animate.css">
-   <link rel="stylesheet" href="css/jquery.fullPage.css">
+
    <link rel="stylesheet" href="css/styles.css">
+   
+   <link rel="stylesheet" href="css/jquery.fullPage.css">
+   <link rel="stylesheet" href="css/animate.css">
   <title>FluidDesign - Website</title>
 </head>
 
@@ -18,8 +20,14 @@
 <div id="fullpage">
 <header class="section page" id="main-area" data-stellar-background-ratio="0.5">
   <div class="container-fluid">
-    <div class="contents">
-      <a href="#" class="btn btn-common wow fadeInUp hvr-overline-from-center" data-wow-duration="1000ms" data-wow-delay="400ms">Info</a>
+    <div id="nav" class="sideNav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Projects</a>
+      <a href="#">Info</a>  
+    </div>
+    <span class="navButton" onclick="openNav()" style="color:white; font-size:30px;cursor:pointer;">&#9776; Menu</span>
+    <div class="contents text-center">
+      <a href="#projects" class="btn btn-common wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">See More</a>
     </div>
   </div>
 </header>
@@ -65,17 +73,6 @@
           <img src="../images/pr1.jpg"/>
         </div>
         <div class="col-sm-6 col-md-4">
-          <img src="../images/pr2.jpg"/>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <img src="../images/pr2.jpg"/>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-md-4">
-          <img src="../images/pr2.jpg"/>
-        </div>
-        <div class="col-sm-6 col-md-4">
           <img src="../images/pr1.jpg"/>
         </div>
         <div class="col-sm-6 col-md-4">
@@ -83,19 +80,30 @@
         </div>
       </div>
       <div class="row">
-          <div class="col-sm-6 col-md-4">
-            <img src="../images/pr2.jpg"/>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <img src="../images/pr1.jpg"/>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <img src="../images/pr1.jpg"/>
-          </div>
+        <div class="col-sm-6 col-md-4">
+          <img src="../images/pr1.jpg"/>
         </div>
+        <div class="col-sm-6 col-md-4">
+          <img src="../images/pr1.jpg"/>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <img src="../images/pr1.jpg"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <img src="../images/pr1.jpg"/>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <img src="../images/pr1.jpg"/>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <img src="../images/pr1.jpg"/>
+        </div>
+      </div>
         <div class="row">
             <div class="col-sm-6 col-md-4">
-              <img src="../images/pr2.jpg"/>
+              <img src="../images/pr1.jpg"/>
             </div>
             <div class="col-sm-6 col-md-4">
               <img src="../images/pr1.jpg"/>
@@ -112,7 +120,8 @@
 
 <script src="../js/jquery-3.3.1.min.js"></script>
 <script src="../js/vendors/scrolloverflow.min.js"></script>
-<script src="../js/vendors/jquery.slimscroll.js"></script>
+<script src="../js/vendors/jquery.slimscroll.min.js"></script>
 <script src="../js/jquery.fullPage.js"></script>
+<script src="../js/wow.js"></script>
 <script src="../js/scripts.js"></script>
 </html>

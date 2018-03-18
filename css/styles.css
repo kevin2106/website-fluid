@@ -5,11 +5,7 @@ font-weight: normal;
 src: local('DIN Condensed Bold'), url('../css/fonts/DINCondensed-Bold.woff') format('woff');
 }
 
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  #main-area {
-    background-size: 100%;
-  }
-}
+
 
 body {
   font-family: 'DIN Condensed Bold';
@@ -17,28 +13,90 @@ body {
   flex-wrap: wrap;
 }
 
+.sideNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sideNav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sideNav a:hover {
+  color: #f1f1f1;
+}
+
+.sideNav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
 .btn {
-  font-size: 14px;
+  font-size: 18px;
   padding: 11px 40px;
   font-weight: 400;
   color: white;
   text-transform: uppercase;
-  display: inline-block;
+  display: inline;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+
+#main-area .btn:hover {
+  background-color: white;
+  color: black;
 }
 
 .btn-common {
-  border: 3px solid #707070;
+  border: 2px solid white;
   background: none;
-  position: relative;
   color: #fff;
 }
 
 #main-area {
-   background-image: url(../images/mainpage.png);
-   background-position: center;
+  background-image: url(../images/mainpage2.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+
+}
+#main-area .navButton {
+  position: absolute; 
+  right: 1%; 
+  top: 10%;
+}
+
+#main-area .contents  {
+  margin-top: 50%;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 860px) {
+  #main-area {
+    background-image: url(../images/mainpage-mobile.png);
+    background-position: 50% 50%;
+    background-size: 200%; 
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+    background-color: #181818;
+  }
+
+  #main-area .contents  {
+    margin-top: 100%;
+  }
 }
 
 #main-area h1 {
@@ -52,7 +110,6 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-
 }
 
 #skills .contents{
@@ -61,8 +118,11 @@ body {
 
 #skills .section-header h1 {
   background-color: white;
-  width: 125px;
+  width: 150px;
+  padding-left: 10px;
   text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 50px;
 }
 
 #skills .section-contents ul{
@@ -71,27 +131,40 @@ body {
 }
 
 #skills .section-contents ul li {
-  font-size: 56px;
+  font-size: 65px;
   color: white;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 10px;
 }
 
 #skills #skill {
   color: #00FFFF;
 }
 
-#projects {
+@media only screen and (min-width: 100px) and (max-width: 860px) {
+  #skills .contents {
+    padding: 5% 0 0 5%;
+  }
+
+  #skills .section-contents ul li {
+    letter-spacing: 2px;
+    font-size: 30px;
+  }
 }
 
 #projects .contents {
+  height: 100%;
+}
+
+#projects .contents .row {
 }
 
 #projects .row img {
-  width: 100%;
-  height: 50%;
+height: 100%;
+width: 100%;
 }
 
-#projects .col-sm-6 {
-  padding: 0 0 0 0;
+#projects .col-md-4 {
+  padding: 0;
+  height: 50%;
 }
