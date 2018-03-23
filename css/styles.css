@@ -5,7 +5,12 @@ font-weight: normal;
 src: local('DIN Condensed Bold'), url('../css/fonts/DINCondensed-Bold.woff') format('woff');
 }
 
-
+@font-face {
+font-family: 'Nunito Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Nunito Bold'), url('../css/fonts/Nunito-Bold.ttf') format('truetype');
+}
 
 body {
   font-family: 'DIN Condensed Bold';
@@ -48,8 +53,8 @@ body {
 }
 
 .btn {
-  font-size: 18px;
-  padding: 11px 40px;
+  font-size: 25px;
+  padding: 15px 60px;
   font-weight: 400;
   color: white;
   text-transform: uppercase;
@@ -82,7 +87,7 @@ body {
 }
 
 #main-area .contents  {
-  margin-top: 50%;
+  margin-top: 30%;
 }
 
 @media only screen and (min-width: 100px) and (max-width: 860px) {
@@ -156,8 +161,41 @@ body {
   height: 100%;
 }
 
-#projects .contents .row {
+#projects .contents a img {
+
+  transition: all .5s;
+  image-rendering: auto;
 }
+
+#projects .contents a:hover img{
+  transform: scale(1.1);
+}
+
+#projects .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, .8);
+  transition: .5s ease;
+}
+
+#projects .overlay div {
+  margin-top: 30%;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  opacity: 1;
+}
+
+#projects .contents a:hover .overlay {
+  opacity: 1;
+}
+
 
 #projects .row img {
 height: 100%;
