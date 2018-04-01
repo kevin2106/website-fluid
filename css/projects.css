@@ -1,0 +1,146 @@
+@font-face {
+font-family: 'Nunito Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Nunito Bold'), url('../css/fonts/Nunito-Bold.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Nunito Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Nunito Regular'), url('../css/fonts/Nunito-Regular.ttf') format('truetype');
+}
+@font-face {
+font-family: 'DIN Condensed Bold';
+font-style: normal;
+font-weight: normal;
+src: local('DIN Condensed Bold'), url('../css/fonts/DINCondensed-Bold.woff') format('woff');
+}
+body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+ .navbar {
+  background: rgba(18, 18, 18, 0.6);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.9);
+}
+
+.navbar .container-fluid {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar a {
+  color: #cfcbcb;
+  font-family: "DIN Condensed Bold";
+  font-size: 20px;
+  width: 125px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.3s color ease-in-out;
+}
+ .container-fluid>.navbar-header {
+   margin-left: 5%;
+ }
+
+.navbar-right {
+  margin-right: 5%;
+}
+
+
+.nav>li>a:hover {
+ color: white;
+ background-color: #eee0;
+}
+
+.navbar-nav li.active > a {
+  color: white;
+ background-color: #eee0;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+.navbar .navbar-collapse {
+    text-align: center;
+}
+.navbar-toggle {
+  border: 1px solid white;
+}
+
+.navbar-toggle .icon-bar {
+  background-color:white;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+  .navbar-right {
+  margin-right: 5%;
+}
+}
+#projects-header {
+    background-image: url(../../images/projects/eezy_front.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#projects-info .contents .info-title {
+    text-align: center;
+    font-family: 'Nunito Bold';
+    text-align: center;
+    font-size: 60px;
+}
+
+#projects-info .contents .info-text {
+    font-family: 'Nunito Regular';
+    text-align: center;
+}
+
+#projects-info .contents #title {
+    color: blue;
+}
+
+#projects-points .infotext {
+    margin-top: 15%;
+}
+
+#projects-points .contents .image {
+    margin-right: 10;
+    margin-top: -15%;
+    float: left;
+    display: block;
+}
+#projects-points .contents .infotext li {
+    margin-bottom: 20px;
+}
+#projects-points .contents .infotext #title{
+    font-size: 40px;
+    display: block;
+}
+
+#projects-points .contents .infotext #text{
+    font-size: 20px;
+    display: block;
+}
+
+#projects-points .contents li {
+    list-style-type: none;
+}
+
+#projects-image {
+    background-image: url(../../images/projects/eezy_full.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+@media only screen and (min-width: 100px) and (max-width: 860px){
+    #body {
+        height: auto !important;
+        background-size: 100%;
+    }
+
+    .fp-tableCell {
+height: 100% !important;
+}
+
+
+}

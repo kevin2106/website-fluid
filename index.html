@@ -5,32 +5,53 @@
   <meta name="theme-color" content="#000000">
   <!--Import Google Icon Font-->
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <!--Import materialize.css-->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-   <!--Import custom.css-->
 
+   <!--Import custom.css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
    <link rel="stylesheet" href="css/styles.css">
-   
+      <!--Import materialize.css-->
    <link rel="stylesheet" href="css/jquery.fullPage.css">
    <link rel="stylesheet" href="css/animate.css">
   <title>FluidDesign - Website</title>
 </head>
-
+<body>
 <!-- Header Section -->
-<div id="fullpage">
-<header class="section page" id="main-area" data-stellar-background-ratio="0.5">
+<nav class="navbar navbar-fixed-top ">
   <div class="container-fluid">
-    <div id="nav" class="sideNav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#">Projects</a>
-      <a href="#">Info</a>  
-    </div>
-    <span class="navButton" onclick="openNav()" style="color:white; font-size:30px;cursor:pointer;">&#9776;</span>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand" href="#">Fluid Design</a>
+        </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item active">
+                  <a class="nav-link page-scroll" href="#main-area">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link page-scroll" href="#aboutme">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link page-scroll" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link page-scroll" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          </nav>
+<div id="fullpage" class="fullpage-wrapper">
+<div class="section page" id="main-area" data-stellar-background-ratio="0.5">    
+  <div class="container-fluid">
     <div class="contents text-center">
       <a href="#projects" class="btn btn-common wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">View Work</a>
     </div>
   </div>
-</header>
+</div>
 
 <!-- Skills Section -->
 <section class="section page" id="skills">
@@ -63,15 +84,14 @@
   </div>
 </section>
 
-
 <!-- Projects Section -->
 <section class="section page slide" id="projects">
   <div class="container-fluid">
     <div class="contents">
       <div class="row">
         <div class="col-sm-6 col-md-4">
-          <a href="#">
-            <img src="../images/projects/pr1.jpg"/>
+          <a href="../../html/projects/eezy.html">
+            <img src="../images/projects/pr1.jpg" />
             <div class="overlay">
               <div>
                 <h1>Eezy</h1>
@@ -84,24 +104,24 @@
             <img src="../images/projects/pr2.png" />
             <div class="overlay">
               <div>
-                <h1>Eezy</h1>
+                <h1>Short Stay Citizens</h1>
               </div>
             </div>
           </a>
         </div>
         <div class="col-sm-6 col-md-4">
           <a href="#">
-            <img src="../images/projects/pr3.jpg" />
+            <img src="../images/projects/GTR-front-4-3.png" />
             <div class="overlay">
               <div>
-                <h1>Eezy</h1>
+                <h1>GTR</h1>
               </div>
             </div>
           </a>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm-6 col-md-4">
+      <div class="row" id="artworks">
+        <div class="col-sm-6 col-md-4 item">
           <a href="#">
             <img src="../images/projects/pr4.jpg" />
             <div class="overlay">
@@ -111,7 +131,7 @@
             </div>
           </a>
         </div>
-        <div class="col-sm-6 col-md-4">
+        <div class="item col-sm-6 col-md-4 item">
           <a href="#">
             <img src="../images/projects/pr5.jpg" />
             <div class="overlay">
@@ -121,7 +141,7 @@
             </div>
           </a>
         </div>
-        <div class="col-sm-6 col-md-4">
+        <div class="item col-sm-6 col-md-4 item">
           <a href="#">
             <img src="../images/projects/pr6.png" />
             <div class="overlay">
@@ -171,8 +191,10 @@
 </section>
 
 </div>
+</body>
 
 <script src="../js/jquery-3.3.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="../js/vendors/scrolloverflow.min.js"></script>
 <script src="../js/vendors/jquery.slimscroll.min.js"></script>
 <script src="../js/jquery.fullPage.js"></script>

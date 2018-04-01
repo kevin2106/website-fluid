@@ -5,51 +5,69 @@ font-weight: normal;
 src: local('DIN Condensed Bold'), url('../css/fonts/DINCondensed-Bold.woff') format('woff');
 }
 
-@font-face {
-font-family: 'Nunito Bold';
-font-style: normal;
-font-weight: normal;
-src: local('Nunito Bold'), url('../css/fonts/Nunito-Bold.ttf') format('truetype');
-}
-
 body {
   font-family: 'DIN Condensed Bold';
   display: flex;
   flex-wrap: wrap;
 }
 
-.sideNav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 60px;
-  transition: 0.5s;
+.navbar {
+  background: rgba(18, 18, 18, 0.6);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.9);
 }
 
-.sideNav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+.navbar .container-fluid {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-.sideNav a:hover {
-  color: #f1f1f1;
+.navbar a {
+  color: #cfcbcb;
+  font-family: "DIN Condensed Bold";
+  font-size: 20px;
+  width: 125px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.3s color ease-in-out;
+}
+ .container-fluid>.navbar-header {
+   margin-left: 5%;
+ }
+
+.navbar-right {
+  margin-right: 5%;
 }
 
-.sideNav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+
+.nav>li>a:hover {
+ color: white;
+ background-color: #eee0;
+}
+
+.navbar-nav li.active > a {
+  color: white;
+ background-color: #eee0;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+.navbar .navbar-collapse {
+    text-align: center;
+}
+.navbar-toggle {
+  border: 1px solid white;
+}
+
+.navbar-toggle .icon-bar {
+  background-color:white;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+  .navbar-right {
+  margin-right: 5%;
+}
 }
 
 .btn {
@@ -80,14 +98,9 @@ body {
   background-repeat: no-repeat;
 
 }
-#main-area .navButton {
-  position: absolute; 
-  right: 1%; 
-  top: 10%;
-}
 
 #main-area .contents  {
-  margin-top: 30%;
+  margin-top: 35%;
 }
 
 @media only screen and (min-width: 100px) and (max-width: 860px) {
@@ -162,9 +175,9 @@ body {
 }
 
 #projects .contents a img {
-
   transition: all .5s;
   image-rendering: auto;
+
 }
 
 #projects .contents a:hover img{
@@ -205,4 +218,5 @@ width: 100%;
 #projects .col-md-4 {
   padding: 0;
   height: 50%;
+  overflow: hidden;
 }
