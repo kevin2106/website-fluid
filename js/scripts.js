@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$('#fullpage').fullpage({
         sectionSelector: '.page',
-        scrollOverflow: true,
+        scrollOverflow: false,
         responsiveWidth: 1100
 	});
 });
