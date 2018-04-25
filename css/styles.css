@@ -93,27 +93,40 @@ body {
 }
 
 #main-area {
-  background-image: url(../images/mainpage2.png);
+  background-image: url(../images/mainpage.png);
   background-position: center top;
   background-repeat: no-repeat;
+  background-size: 100% 100%;
 
 }
 
-#main-area .contents  {
-  margin-top: 35%;
+#main-area .logoHeader  {
+  padding-bottom: 5%;
+}
+
+#main-area .logoHeader img {
+  width: 25%;
 }
 
 @media only screen and (min-width: 100px) and (max-width: 860px) {
   #main-area {
-    background-image: url(../images/mainpage-mobile.png);
+    background-image: url(../images/website-footer-bg-4-3.png);
     background-position: 50% 50%;
     background-size: 200%; 
     background-repeat: no-repeat;
-    background-color: #181818;
+    background-color: #151515;
   }
 
-  #main-area .contents  {
-    margin-top: 100%;
+  #main-area .logoHeader  {
+    padding-bottom: 15%;
+  }
+  
+  #main-area .logoHeader img {
+    width: 80%;
+  }
+
+  #main-area .btn {
+    padding: 10px 30px;
   }
 }
 
@@ -122,17 +135,10 @@ body {
 }
 
 #skills {
-  background-image: url(../images/background.png);
-  background-position: center;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
+  background-color: #151515; 
 }
 
-#skills .contents{
-  padding: 10% 0 5% 5%;
-}
+
 
 #skills .section-header h1 {
   background-color: white;
@@ -159,16 +165,6 @@ body {
   color: #00FFFF;
 }
 
-@media only screen and (min-width: 100px) and (max-width: 860px) {
-  #skills .contents {
-    padding: 5% 0 0 5%;
-  }
-
-  #skills .section-contents ul li {
-    letter-spacing: 2px;
-    font-size: 30px;
-  }
-}
 
 #projects .contents {
   height: 100%;
@@ -220,3 +216,60 @@ width: 100%;
   height: 50%;
   overflow: hidden;
 }
+
+#footer {
+  background-image: url(../images/website-footer-bg.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+#footer .contents {
+  text-align: center;
+
+}
+#footer .title-info img {
+  width: 35%;
+}
+
+@media all and (max-width: 479px) {
+
+  #skills .fp-tableCell {
+    display: initial;
+  }
+  #skills  .contents {
+    justify-content: center;  
+  }
+
+  #skills .profile-picture {
+    text-align: center;
+    margin-bottom: 25%;
+  }
+
+  #skills .profile-picture img {
+     width: 60%;
+  }
+
+  #skills .info-text {
+    text-align: center;
+  }
+  #skills .info-text p{
+    font-size: 150%;
+  }
+
+  #skills .info-text h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 3em;
+  }
+
+
+
+  #skills .info-text span {
+
+  }
+
+}
+
