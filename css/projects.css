@@ -44,11 +44,6 @@ body {
      width: 100%;
    }
   
-  .navbar-right {
-    margin-right: 5%;
-  }
-  
-  
   .nav>li>a:hover {
    color: white;
    background-color: #eee0;
@@ -73,25 +68,13 @@ body {
   .navbar-toggle .icon-bar {
     background-color:white;
   }
-  
-  @media only screen and (min-width: 100px) and (max-width: 768px) {
-    .navbar-right {
-    margin-right: 5%;
-  }
-  }
+
 #projects-header {
     height: 100%;
     overflow: hidden;
 }
 #projects-header #bg {
     width: 100%;
-}
-
-@media only screen and (min-width: 100px) and (max-width: 1182px) {
-    #projects-header {
-        height: 50%;
-        overflow: hidden;
-    }
 }
 
 #projects-info {
@@ -119,11 +102,11 @@ body {
 }
 
 #projects-info .contents #title {
-    color: blue;
+    color: #10ABF0;
 }
 
-#projects-points .infotext {
-    margin-top: 15%;
+#projects-info .contents #subtitle {
+    color: #413F3F;
 }
 
 #projects-points {
@@ -133,9 +116,13 @@ body {
 
 #projects-points .contents .image {
     margin-right: 10;
-    margin-top: -15%;
+    margin-top: -10%;
     float: left;
-    display: block;
+    text-align: center;
+}
+
+#projects-points .contents .image img {
+    width: 90%;
 }
 
 #projects-points .contents .infotext li {
@@ -155,20 +142,158 @@ body {
     list-style-type: none;
 }
 
-#projects-image {
-    background-image: url(../../images/projects/eezy_full.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+#projects-image img {
+    width: 100%;
 }
-@media only screen and (min-width: 100px) and (max-width: 860px){
-    #body {
-        height: auto !important;
-        background-size: 100%;
+
+@media all and (min-width: 737px) and (max-width: 980px) {
+    #projects-info {
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+    #projects-info  .info-title #title {
+        font-size: 1em;
+        margin-bottom: 0;
+    }
+    #projects-info .info-title #subtitle {
+        font-size: 0.4em;
+        margin-top: 0;
     }
 
-    .fp-tableCell {
-height: 100% !important;
-}
+    #projects-points .contents .image {
+        display: inline-block;
+        margin-top: 0;
+    }
 
+    #projects-points {
+        width: 100%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        background-color: #f0eeee;
+    }
 
-}
+    #projects-points .contents {
+        display: flex;
+    }
+    #projects-points .contents .image img {
+        vertical-align: top;
+        width: 100%;
+    }
+
+    #projects-points .contents .infotext {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 15%;
+        width: 100%;
+    }
+
+    #projects-points .contents .infotext #title {
+        font-size: 2em;
+    }
+
+    #projects-points .contents .infotext #text {
+        font-size: 1em;
+    }
+
+    #projects-points .contents .infotext ul {
+        margin-left: 5%;
+    }
+  
+  }
+
+@media all and (min-width: 480px) and (max-width: 736px) {
+    #projects-info {
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+    #projects-info  .info-title #title {
+        font-size: 1em;
+        margin-bottom: 0;
+    }
+    #projects-info .info-title #subtitle {
+        font-size: 0.4em;
+        margin-top: 0;
+    }
+
+    #projects-points .contents .image {
+        display: inline-block;
+        margin-top: 0;
+    }
+
+    #projects-points {
+        padding-top: 10%;
+        padding-bottom: 10%;
+        background-color: #f0eeee;
+    }
+
+    #projects-points .contents {
+        display: flex;
+    }
+    #projects-points .contents .image img {
+        vertical-align: top;
+        width: 80%;
+    }
+
+    #projects-points .contents .infotext {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+    }
+
+    #projects-points .contents .infotext #title {
+        font-size: 1.5em;
+    }
+
+    #projects-points .contents .infotext #text {
+        font-size: 1em;
+    }
+
+    #projects-points .contents .infotext ul {
+        margin-left: -5%;
+    }
+  
+  }
+
+@media all and (max-width: 479px) {
+    #projects-info {
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+    #projects-info  .info-title #title {
+        font-size: 1em;
+        margin-bottom: 0;
+    }
+    #projects-info .info-title #subtitle {
+        font-size: 0.4em;
+        margin-top: 0;
+    }
+
+    #projects-points .contents .image {
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    #projects-points {
+        padding-top: 10%;
+        padding-bottom: 10%;
+        background-color: #f0eeee;
+    }
+    #projects-points .contents .image img {
+        width: 70%;
+    }
+
+    #projects-points .contents .infotext ul {
+        text-align: center; 
+        padding-left: 0;
+    }
+
+    #projects-points .contents .infotext #title {
+        font-size: 2em;
+    }
+
+    #projects-points .contents .infotext #text {
+        font-size: 1em;
+    }
+
+  }
+  
