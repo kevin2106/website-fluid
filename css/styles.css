@@ -264,7 +264,7 @@ width: 100%;
   text-align: left;
 }
 
-#footer .content-info img {
+#footer .content-info object {
   width: 15%;
   vertical-align: middle;
   margin-right: 5%;
@@ -284,6 +284,7 @@ width: 100%;
 @media all and (min-width: 1691px) {
 
 }
+
 @media all and (min-width: 1281px)  { 
   #skills .contents {
     display: flex table-header-group;
@@ -360,7 +361,6 @@ width: 100%;
   }
 }
 
-
 @media all and (min-width: 737px) and (max-width: 980px) {
   #skills .fp-tableCell {
     display: initial;
@@ -402,6 +402,7 @@ width: 100%;
     margin-left: 20%;
   }
 }
+
 @media all and (min-width: 480px) and (max-width: 736px) {
   #skills .fp-tableCell {
     display: initial;

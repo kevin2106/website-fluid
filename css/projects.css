@@ -146,6 +146,143 @@ body {
     width: 100%;
 }
 
+@media all and (min-width: 1281px)  { 
+    #projects-info {
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+
+    #projects-info .contents .info-title #title {
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+
+    #projects-info .contents .info-title #subtitle {
+        font-size: 1em;
+        margin-top: 0;
+    }
+
+    #projects-info .contents .info-text {
+        width: 60%;
+        margin: 0 auto;
+    }
+    #projects-info .contents .info-text #text {
+        font-size: 1.3em;
+    }
+
+    #projects-points .contents .image {
+        margin-top: 0;
+    }
+    
+    #projects-points .contents .image img {
+        vertical-align: top;
+        width: 100%;
+    }
+
+    #projects-points {
+        width: 100%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        background-color: #f0eeee;
+    }
+
+    #projects-points .contents {
+        display: flex;
+        margin-left: 10%;
+    }
+    #projects-points .contents .image img {
+        vertical-align: top;
+        width: 100%;
+    }
+
+    #projects-points .contents .infotext {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 3%;
+        width: 100%;
+    }
+
+    #projects-points .contents .infotext #title {
+        font-size: 3em;
+    }
+
+    #projects-points .contents .infotext #text {
+        font-size: 1.5em;
+    }
+
+    #projects-points .contents .infotext ul {
+        margin-left: 15%;
+    }
+  }
+
+@media all and (min-width: 981px) and (max-width: 1280px) { 
+    #projects-info {
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+
+    #projects-info .contents .info-title #title {
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+
+    #projects-info .contents .info-title #subtitle {
+        font-size: 1em;
+        margin-top: 0;
+    }
+
+    #projects-info .contents .info-text #text {
+        font-size: 1.3em;
+    }
+
+
+
+    #projects-points .contents .image {
+        margin-top: 0;
+    }
+    
+    #projects-points .contents .image img {
+        vertical-align: top;
+        width: 100%;
+    }
+
+    #projects-points {
+        width: 100%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        background-color: #f0eeee;
+    }
+
+    #projects-points .contents {
+        display: flex;
+        margin-left: 10%;
+    }
+    #projects-points .contents .image img {
+        vertical-align: top;
+        width: 100%;
+    }
+
+    #projects-points .contents .infotext {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 3%;
+        width: 100%;
+    }
+
+    #projects-points .contents .infotext #title {
+        font-size: 3em;
+    }
+
+    #projects-points .contents .infotext #text {
+        font-size: 1.5em;
+    }
+
+    #projects-points .contents .infotext ul {
+        margin-left: 5%;
+    }
+  
+  }
+
 @media all and (min-width: 737px) and (max-width: 980px) {
     #projects-info {
         padding-top: 5%;
