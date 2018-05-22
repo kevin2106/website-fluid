@@ -105,6 +105,7 @@ body {
     color: #10ABF0;
 }
 
+
 #projects-info .contents #subtitle {
     color: #413F3F;
 }
@@ -144,6 +145,18 @@ body {
 
 #projects-image img {
     width: 100%;
+}
+
+
+#projects-images {
+    text-align: center;
+}
+#projects-images img {
+    width: 60%;
+}
+
+#projects-image .image-minimal {
+    margin: 0 auto;
 }
 
 @media all and (min-width: 1281px)  { 
